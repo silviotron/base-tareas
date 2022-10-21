@@ -16,28 +16,12 @@
                 <!--<form action="./?sec=formulario" method="post">                   -->
                 <form method="post" action="./?sec=repaso02">
                     <div class="mb-3">
-                        <label for="nombre">Nombre completo</label>
-                        <input class="form-control" id="nombre" type="text" name="nombre" placeholder="nombre" value="<?php echo isset($data['input']['nombre']) ? $data['input']['nombre'] : "" ?>">
-                        <p class="text-danger small"><?php echo isset($data['errores']['nombre']) ? $data['errores']['nombre'] : ''; ?></p>
-                    </div>
-                    
+                        <label for="texto">Texto:</label>
+                        <input class="form-control" id="texto" type="text" name="texto" placeholder="texto" value="<?php echo isset($data['input']['texto']) ? $data['input']['texto'] : "" ?>">
+                        <p class="text-danger small"><?php echo isset($data['errores']['texto']) ? $data['errores']['texto'] : ''; ?></p>
+                    </div>                    
                 </form>
             </div>
         </div>
     </div>
-    <?php
-    if (isset($data['resultado'])) {
-        ?>
-        <div class="col-12">
-            <div class="alert alert-success">
-                <?php
-                foreach ($data['resultado'] as $key => $value) {
-                    echo $key . " -> " . implode(", ", $value) . "<br>";
-                }
-                ?>
-            </div>
-        </div>
-        <?php
-    }
-    ?>
 </div>
