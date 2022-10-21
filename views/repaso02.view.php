@@ -58,20 +58,5 @@
                 </form>
             </div>
         </div>
-    </div>
-    <?php
-    if (isset($data['resultado'])) {
-        ?>
-        <div class="col-12">
-            <div class="alert alert-success">
-                <?php
-                foreach ($data['resultado'] as $key => $value) {
-                    echo $key . " -> " . implode(", ", $value) . "<br>";
-                }
-                ?>
-            </div>
-        </div>
-        <?php
-    }
-    ?>
+    </div>   
 </div>
