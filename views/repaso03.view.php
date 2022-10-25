@@ -14,12 +14,15 @@
             <!-- Card Body -->
             <div class="card-body">
                 <!--<form action="./?sec=formulario" method="post">                   -->
-                <form method="post" action="./?sec=repaso02">
+                <form method="post" action="./?sec=repaso03">
                     <div class="mb-3">
                         <label for="texto">Texto:</label>
                         <input class="form-control" id="texto" type="text" name="texto" placeholder="texto" value="<?php echo isset($data['input']['texto']) ? $data['input']['texto'] : "" ?>">
                         <p class="text-danger small"><?php echo isset($data['errores']['texto']) ? $data['errores']['texto'] : ''; ?></p>
-                    </div>                    
+                    </div>   
+                    <div class="mb-3">
+                        <input type="submit" value="enviar" name="enviar" class="btn btn-primary"/>
+                    </div>
                 </form>
             </div>
         </div>
