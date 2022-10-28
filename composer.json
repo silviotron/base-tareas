@@ -1,11 +1,11 @@
 {
-    "name": "silvio/base-tareas",
+    "name": "dev/base-tareas",
     "description": "Proyecto UD3-4",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Com\\daw2\\Helpers\\": "helpers/"
+            "Com\\Daw2\\Helpers\\": "helpers/"
         }
     },
     "authors": [

@@ -1,11 +1,6 @@
 <?php
 declare (strict_types=1);
 
-/**
- * Description of Categoria
- *
- * @author snovmar
- */
 namespace Com\Daw2\Helpers;
 class Categoria {
 
