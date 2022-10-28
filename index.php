@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 define("CONTROLLERS_HOME", 'controllers/');
 
 /**
@@ -9,7 +10,7 @@ $scripts = array();
 foreach ($allfiles as $file) {
     $file_parts = pathinfo($file);
     //var_dump($file_parts);
-    if(substr($file_parts['filename'], 0, 1) != "_" && substr($file_parts['filename'], -10) == 'controller' && $file_parts['extension'] == "php" ){
+    if($file_parts['extension'] == "php" && substr($file_parts['filename'], 0, 1) != "_" && substr($file_parts['filename'], -10) == 'controller'){
         array_push($scripts, substr($file_parts['filename'], 0, -11));        
     }
 }
